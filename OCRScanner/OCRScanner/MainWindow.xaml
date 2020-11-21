@@ -1,0 +1,25 @@
+﻿<Window x:Class="OCRScanner.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OCRScanner"
+        mc:Ignorable="d"
+        Title="OCR Detection" Height="600" Width="1200">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="5*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="8*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+
+        <Image x:Name="imgOutput" Grid.Row="0" Grid.Column="0"/>
+        <ListBox x:Name="lstOutput" Grid.Row="0" Grid.Column="1"/>
+        <Button x:Name="btnOpenImg" Content="Open Image" Grid.Column="0" Grid.Row="1" Click="btnOpenImg_Click"/>
+        <Button x:Name="btnDetect" Content="Detect" Grid.Column="1" Grid.Row="1" Click="btnDetect_Click"/>
+
+    </Grid>
+</Window>
